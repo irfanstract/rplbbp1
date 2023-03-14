@@ -1,0 +1,46 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+
+
+
+
+
+# cached dependencies
+
+# test-run output files 
+/coverage
+TEST-results.xml
+
+# runnable, compiled forms 
+dist
+/build
+built/*
+/bin
+target/
+
+# Optional linting cache
+
+# repo-unworthy Logfiles
+
+# IDE-specifiques 
+# oftentimes there arise needs to make changes to `settings.json` due to failures to build and run  
+# VSCode's C/C++ Extension frequently modify `settings.json` (eg for `files.associations`)
+.settings
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+/.vscode/*
+!/.vscode/extensions.json
+.idea
+
+# Platform-specifiques 
+.DS_Store
+
+# Misc
+
+
+
+
+
+
