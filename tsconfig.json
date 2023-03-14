@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext",
+    ],
+
+    // LANGUAGE
+    "allowJs": true,
+    "checkJs": true,
+    "strict": true,
+    "noImplicitAny": true, // '"strict": true ' did not enforce this
+    // without this
+    // the type-system would be unsound as
+    // `tsc` would pretend indexed array items always exists which cannot be proven.
+    // i believe `tsc init` should have done this.
+    "noUncheckedIndexedAccess": true, 
+    "noFallthroughCasesInSwitch": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true, // WDYT?
+
+    // BINARY COMPAT
+    "jsx": "react-jsx",
+    "module": "CommonJS",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSourceMap": true,
+    "allowSyntheticDefaultImports": true, // WDYT ?
+    "esModuleInterop": true, // WDYT ?
+    "forceConsistentCasingInFileNames": true, // WDYT ?
+    "skipLibCheck": true, // WDYT ?
+    "outDir": "./dist",
+    "noEmit": true, // WDYT ?
+    
+  },
+  "include": [
+    "src" ,
+  ],
+}
