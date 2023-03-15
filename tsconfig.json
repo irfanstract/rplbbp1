@@ -19,7 +19,7 @@
     "noUncheckedIndexedAccess": true, 
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
-    "isolatedModules": true, // WDYT?
+    "isolatedModules": false, // WDYT?
 
     // BINARY COMPAT
     "jsx": "react-jsx",
