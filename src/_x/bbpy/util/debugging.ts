@@ -47,6 +47,19 @@ export const formatErrorMesssageWithInspect: {
   )
 ) ;
 
+/** 
+ * dispatch the given callback async-ly.
+ * a work-around to cyclic dependency .
+ */
+export function dispatchAsyncUnitTestCallback(...args: [
+  main: { (): void ; } ,
+]): void ;
+export function dispatchAsyncUnitTestCallback(...[doExpectedThing]: [() => void]) {
+  process.nextTick(() => (
+    doExpectedThing()
+  ))
+}
+
 
 
 
