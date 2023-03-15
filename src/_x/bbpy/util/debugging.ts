@@ -35,6 +35,18 @@ import {
 export { inspect, } ;
 export { InspectOptions, } ;
 
+export const formatErrorMesssageWithInspect: {
+  <M extends string, C extends object>(...args: [
+    message: M, 
+    ctxVars: C,
+    ...etc: C extends Function ? [never] : [],
+  ] ): string ;
+} = (
+  (message, vars, ..._1) => (
+    "" + message + "\n=====\n" + inspect(vars)
+  )
+) ;
+
 
 
 
