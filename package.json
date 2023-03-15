@@ -33,6 +33,7 @@
     "rules": {
       "@typescript-eslint/no-unused-vars" : "off" ,
       "no-extend-native" : "off" ,
+      "import/first" : "off" ,
       "no-useless-rename": "off"
     }
   },
