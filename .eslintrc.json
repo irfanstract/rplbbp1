@@ -1,0 +1,33 @@
+{
+
+  "extends": [
+    
+    // adopt the `react-app` rules as starter, although
+    // will need to subvert some of them due to the inconveniences it/they caused
+    "react-app",
+    "react-app/jest" 
+
+  ] ,
+
+  "rules": {
+    
+    // following this rule would violate the code cohecivity principle
+    "import/first" : "off" ,
+
+    // for practical reasons we sometimes need to do this 
+    "no-extend-native" : "off" ,
+
+    // nay
+    "@typescript-eslint/no-unused-vars" : "off" ,
+    
+    // nay - without labels code refactoring could easily lead to bugs
+    "no-labels": "off" ,
+    "no-unused-labels": "off" ,
+    "no-extra-label": "off" ,
+
+    // why???
+    "no-useless-rename": "off" 
+    
+  }
+  
+}
