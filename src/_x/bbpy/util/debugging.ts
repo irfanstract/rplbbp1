@@ -28,6 +28,13 @@ export {
   throws ,
 } from "assert" ;
 
+import { 
+  inspect ,
+  InspectOptions ,
+} from "util" ; 
+export { inspect, } ;
+export { InspectOptions, } ;
+
 
 
 
