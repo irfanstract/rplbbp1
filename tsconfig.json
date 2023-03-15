@@ -40,4 +40,18 @@
   "include": [
     "src" ,
   ],
+  "ts-node": {
+    "require": [
+      // TS-Node is intended to be binary-compatible with Node.
+      // https://typestrong.org/ts-node/docs/paths/ 
+      "tsconfig-paths/register" ,
+    ] ,
+    "compilerOptions": {
+      // https://typestrong.org/ts-node/docs/imports 
+      "module": "CommonJS",
+      // https://stackoverflow.com/a/63963296 (not sure if really need to keep this)
+      "target": "ES2017",
+    } ,
+    // "esm": true,
+  } ,
 }
