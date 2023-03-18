@@ -5,7 +5,7 @@
     // adopt the `react-app` rules as starter, although
     // will need to subvert some of them due to the inconveniences it/they caused
     "react-app",
-    "react-app/jest" ,
+    "react-app/jest" 
 
   ] ,
 
@@ -26,8 +26,8 @@
     "no-extra-label": "off" ,
 
     // why???
-    "no-useless-rename": "off" ,
+    "no-useless-rename": "off" 
     
-  } ,
+  }
   
 }
