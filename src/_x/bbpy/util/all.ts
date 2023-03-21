@@ -8,7 +8,9 @@
 
 export * as Debug from "./debugging" ;
 
-export * from "./lineBreaks" ;
+export { analyseLineBreaks, } from "./lineBreaks" ;
+export * as UtfLineBreak from "./lineBreaks" ;
+
 
 
 
