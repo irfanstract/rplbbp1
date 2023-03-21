@@ -11,19 +11,34 @@
 
   "rules": {
     
-    // following this rule would violate the code cohecivity principle
+    // following the rule would VIOLATE the CODE COHECIVITY principle
     "import/first" : "off" ,
 
-    // for practical reasons we sometimes need to do this 
+    // for practical reasons we sometimes need to monkey-patch native objs
     "no-extend-native" : "off" ,
 
     // nay
     "@typescript-eslint/no-unused-vars" : "off" ,
     
-    // nay - without labels code refactoring could easily lead to bugs
+    // nay - LABELS ARE VERY IMPORTANT -
+    // without labels code refactoring could easily lead to bugs
     "no-labels": "off" ,
-    "no-unused-labels": "off" ,
+    "no-unused-labels": "warn" ,
     "no-extra-label": "off" ,
+
+    // nay
+    "no-lone-blocks": "off",
+    
+    // enable
+    "no-var": "warn",
+    "no-loop-func": "warn",
+    
+    // why?? 
+    "import/no-anonymous-default-export": "off",
+    
+    // there's a reason to disable `no-useless-escape`.
+    // to avoid the implied cognitive burden(s) .
+    "no-useless-escape": "off",
 
     // why???
     "no-useless-rename": "off" 
