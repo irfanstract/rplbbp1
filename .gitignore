@@ -54,6 +54,11 @@ yarn-error.log*
 
 # Misc
 *.swp
+/test/
+/src/_x/numeric*
+/CONTRIBUTING.*
+/README.*
+/.env
 
 
 
