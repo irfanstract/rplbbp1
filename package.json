@@ -4,6 +4,7 @@
   "dependencies": {
     "immutable": "^4.1.0",
     "jszip": "^3.10.1",
+    "@xmldom/xmldom": "^0.8.6",
     "@types/lodash": "^4.14.186",
     "lodash": "^4.17.21",
     "history": "^4.9.0",
